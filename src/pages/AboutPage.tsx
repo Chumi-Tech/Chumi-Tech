@@ -66,7 +66,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
 
           <div className="md:col-span-6 rounded-2xl overflow-hidden shadow-sm border border-slate-200 aspect-4/3">
             <img
-              src="/src/assets/images/dest_lagos_skyline_1793267887899.jpg"
+              src="/images/dest_lagos_skyline_1793267887899.jpg"
               alt="Lagos Travel Hub"
               referrerPolicy="no-referrer"
               className="w-full h-full object-cover"

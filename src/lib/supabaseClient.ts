@@ -1,6 +1,7 @@
 import { createClient, SupabaseClient, User } from '@supabase/supabase-js';
 import { BookingEnquiry, ContactMessage, FlightOffer, SiteSettings, AdminUser } from '../types';
 import { DEFAULT_SITE_SETTINGS, INITIAL_FLIGHT_OFFERS } from './constants';
+import { resolveImageUrl } from './images';
 
 function cleanUrl(url?: string): string {
   if (!url) return '';
@@ -182,7 +183,7 @@ export const dataApi = {
       currency: offer.currency || 'NGN',
       display_label: offer.display_label || 'Sample Fare (Indicative)',
       description: offer.description || '',
-      image_url: offer.image_url || '/src/assets/images/hero_aircraft_clouds_1793267885903.jpg',
+      image_url: resolveImageUrl(offer.image_url),
       is_featured: Boolean(offer.is_featured),
       is_active: offer.is_active !== undefined ? offer.is_active : true,
       travel_notes: offer.travel_notes || '',
