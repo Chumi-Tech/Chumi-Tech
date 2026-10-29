@@ -2,6 +2,12 @@ import { createClient, SupabaseClient, User } from '@supabase/supabase-js';
 import { BookingEnquiry, ContactMessage, FlightOffer, SiteSettings, AdminUser } from '../types';
 import { DEFAULT_SITE_SETTINGS, INITIAL_FLIGHT_OFFERS } from './constants';
 
+// Legacy dev-only asset paths break in production builds; rewrite them to public paths.
+function normalizeImageUrl(url: string | undefined | null): string {
+  if (typeof url !== 'string') return '';
+  return url.replace('/src/assets/images/', '/images/');
+}
+
 function cleanUrl(url?: string): string {
   if (!url) return '';
   return url.trim().replace(/\/rest\/v1\/?$/, '').replace(/\/+$/, '');
@@ -137,7 +143,7 @@ export const dataApi = {
           query = query.eq('is_active', true);
         }
         const { data, error } = await query;
-        if (!error && data) return data as FlightOffer[];
+        if (!error && data) return (data as FlightOffer[]).map((o) => ({ ...o, image_url: normalizeImageUrl(o.image_url) }));
         console.warn('Supabase query error, falling back to local store:', error?.message);
       } catch (err) {
         console.warn('Supabase network error:', err);
@@ -146,14 +152,18 @@ export const dataApi = {
 
     const raw = localStorage.getItem(STORAGE_KEYS.OFFERS);
     const list: FlightOffer[] = raw ? JSON.parse(raw) : INITIAL_FLIGHT_OFFERS;
-    return includeInactive ? list : list.filter((o) => o.is_active);
+    const normalized = list.map((o) => ({ ...o, image_url: normalizeImageUrl(o.image_url) }));
+    return includeInactive ? normalized : normalized.filter((o) => o.is_active);
   },
 
   async getFlightOfferById(id: string): Promise<FlightOffer | null> {
     if (supabase) {
       try {
         const { data, error } = await supabase.from('flight_offers').select('*').eq('id', id).single();
-        if (!error && data) return data as FlightOffer;
+        if (!error && data) {
+          const offer = data as FlightOffer;
+          return { ...offer, image_url: normalizeImageUrl(offer.image_url) };
+        }
       } catch (e) {
         console.warn(e);
       }
@@ -161,7 +171,8 @@ export const dataApi = {
 
     const raw = localStorage.getItem(STORAGE_KEYS.OFFERS);
     const list: FlightOffer[] = raw ? JSON.parse(raw) : INITIAL_FLIGHT_OFFERS;
-    return list.find((o) => o.id === id) || null;
+    const offer = list.find((o) => o.id === id) || null;
+    return offer ? { ...offer, image_url: normalizeImageUrl(offer.image_url) } : null;
   },
 
   async saveFlightOffer(offer: Partial<FlightOffer> & { id?: string }): Promise<FlightOffer> {
@@ -182,7 +193,7 @@ export const dataApi = {
       currency: offer.currency || 'NGN',
       display_label: offer.display_label || 'Sample Fare (Indicative)',
       description: offer.description || '',
-      image_url: offer.image_url || '/src/assets/images/hero_aircraft_clouds_1793267885903.jpg',
+      image_url: offer.image_url || '/images/hero_aircraft_clouds_1793267885903.jpg',
       is_featured: Boolean(offer.is_featured),
       is_active: offer.is_active !== undefined ? offer.is_active : true,
       travel_notes: offer.travel_notes || '',
