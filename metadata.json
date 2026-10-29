@@ -1,0 +1,8 @@
+{
+  "name": "Muna-AirSpace",
+  "description": "Professional flight booking assistance for domestic Nigerian routes and international destinations with WhatsApp enquiry handoff.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
