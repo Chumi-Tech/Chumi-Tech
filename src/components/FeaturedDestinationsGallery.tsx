@@ -40,7 +40,7 @@ const DESTINATIONS: DestinationItem[] = [
     code: 'LOS',
     country: 'Nigeria',
     category: 'domestic',
-    image: '/src/assets/images/dest_lagos_skyline_1793267887899.jpg',
+    image: '/images/dest_lagos_skyline_1793267887899.jpg',
     description: 'Nigeria’s pulsating commercial nerve center, Atlantic coastal energy, and cultural powerhouse.',
     longDescription:
       'Lagos is West Africa’s most vibrant commercial metropolis. From the financial boardrooms of Victoria Island and Marina to the beaches of Lekki and rich arts culture, Lagos is Nigeria’s primary international gateway and domestic hub.',
@@ -58,7 +58,7 @@ const DESTINATIONS: DestinationItem[] = [
     code: 'ABV',
     country: 'Nigeria',
     category: 'domestic',
-    image: '/src/assets/images/dest_abuja_rock_1793267886361.jpg',
+    image: '/images/dest_abuja_rock_1793267886361.jpg',
     description: 'The Federal Capital Territory beneath the towering natural monument of Aso Rock.',
     longDescription:
       'Abuja offers wide tree-lined boulevards, national governmental institutions, and serene mountainous landscapes. Connecting business executives, diplomats, and families across the nation daily.',
@@ -76,7 +76,7 @@ const DESTINATIONS: DestinationItem[] = [
     code: 'LHR',
     country: 'United Kingdom',
     category: 'international',
-    image: '/src/assets/images/dest_london_bridge_1793267887832.jpg',
+    image: '/images/dest_london_bridge_1793267887832.jpg',
     description: 'Premier global hub for university studies, corporate finance, and Nigerian diaspora reunions.',
     longDescription:
       'Connecting Nigeria to the United Kingdom with daily direct and one-stop flights. London is the leading travel destination for Nigerian students, business leaders, and family visits.',
@@ -94,7 +94,7 @@ const DESTINATIONS: DestinationItem[] = [
     code: 'DXB',
     country: 'United Arab Emirates',
     category: 'international',
-    image: '/src/assets/images/dest_dubai_skyline_1793267887900.jpg',
+    image: '/images/dest_dubai_skyline_1793267887900.jpg',
     description: 'Futuristic oasis of luxury shopping, world-class architecture, and global trade fairs.',
     longDescription:
       'Dubai is Nigeria’s favorite destination for luxury holidays, business conferences, international trade, and family entertainment. Offering modern airport facilities and renowned hospitality.',
@@ -112,7 +112,7 @@ const DESTINATIONS: DestinationItem[] = [
     code: 'JNB',
     country: 'South Africa',
     category: 'international',
-    image: '/src/assets/images/dest_joburg_skyline_1793269256130.jpg',
+    image: '/images/dest_joburg_skyline_1793269256130.jpg',
     description: 'Southern Africa’s golden metropolis with rich culture, corporate commerce, and scenic safaris.',
     longDescription:
       'Known as Egoli (City of Gold), Johannesburg is the financial heartbeat of South Africa. Seamlessly connecting Nigerian business delegates, conference attendees, and holidaymakers.',
@@ -130,7 +130,7 @@ const DESTINATIONS: DestinationItem[] = [
     code: 'YYZ',
     country: 'Canada',
     category: 'international',
-    image: '/src/assets/images/dest_toronto_skyline_1793269256746.jpg',
+    image: '/images/dest_toronto_skyline_1793269256746.jpg',
     description: 'Dynamic Canadian economic center welcoming Nigerian scholars, skilled workers, and families.',
     longDescription:
       'Canada’s largest city and cultural melting pot. An increasingly essential route for Nigerian university students, permanent residents, and transatlantic commerce.',

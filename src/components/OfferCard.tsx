@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { ArrowRight, Plane, Calendar, Luggage } from 'lucide-react';
 import { FlightOffer } from '../types';
+import { resolveImageUrl } from '../lib/images';
 
 interface OfferCardProps {
   offer: FlightOffer;
@@ -23,7 +24,7 @@ export const OfferCard: React.FC<OfferCardProps> = ({ offer, onBook }) => {
       <div className="relative aspect-16/10 bg-slate-100 overflow-hidden">
         {!imageError ? (
           <img
-            src={offer.image_url}
+            src={resolveImageUrl(offer.image_url)}
             alt={`${offer.destination_city}, ${offer.country}`}
             referrerPolicy="no-referrer"
             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
