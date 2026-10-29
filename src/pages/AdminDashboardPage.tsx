@@ -168,7 +168,7 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
       currency: 'NGN',
       display_label: 'Sample Fare (Indicative)',
       description: '',
-      image_url: '/src/assets/images/hero_aircraft_clouds_1793267885903.jpg',
+      image_url: '/images/hero_aircraft_clouds_1793267885903.jpg',
       is_featured: false,
       is_active: true,
       travel_notes: '',
@@ -1368,7 +1368,7 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
                     onChange={(e) =>
                       setEditingOffer({ ...editingOffer, image_url: e.target.value })
                     }
-                    placeholder="/src/assets/images/... or https://..."
+                    placeholder="/images/... or https://..."
                     className="flex-1 px-3 py-2 bg-slate-50 border border-slate-200 rounded-xl text-xs"
                   />
                   <label className="px-3 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-semibold flex items-center gap-1 cursor-pointer">

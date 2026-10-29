@@ -58,7 +58,7 @@ export const HomePage: React.FC<HomePageProps> = ({ offers, onNavigate, onSelect
         {/* Background Aircraft Imagery */}
         <div className="absolute inset-0 z-0">
           <img
-            src="/src/assets/images/hero_aircraft_clouds_1793267885903.jpg"
+            src="/images/hero_aircraft_clouds_1793267885903.jpg"
             alt="Aircraft cruising above clouds"
             referrerPolicy="no-referrer"
             className="w-full h-full object-cover object-center opacity-40 scale-105"
@@ -310,7 +310,7 @@ export const HomePage: React.FC<HomePageProps> = ({ offers, onNavigate, onSelect
             <div className="space-y-4">
               <div className="rounded-2xl overflow-hidden aspect-4/3 shadow-sm border border-slate-200">
                 <img
-                  src="/src/assets/images/dest_abuja_rock_1793267886361.jpg"
+                  src="/images/dest_abuja_rock_1793267886361.jpg"
                   alt="Aso Rock Abuja Nigeria"
                   referrerPolicy="no-referrer"
                   className="w-full h-full object-cover"
@@ -339,7 +339,7 @@ export const HomePage: React.FC<HomePageProps> = ({ offers, onNavigate, onSelect
               </div>
               <div className="rounded-2xl overflow-hidden aspect-4/3 shadow-sm border border-slate-200">
                 <img
-                  src="/src/assets/images/dest_london_bridge_1793267887832.jpg"
+                  src="/images/dest_london_bridge_1793267887832.jpg"
                   alt="London Tower Bridge"
                   referrerPolicy="no-referrer"
                   className="w-full h-full object-cover"
