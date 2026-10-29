@@ -73,7 +73,7 @@ export const INITIAL_FLIGHT_OFFERS: FlightOffer[] = [
     display_label: 'Sample Fare (Indicative)',
     description:
       'Frequent daily domestic connection between Nigeria’s commercial nerve center and the federal capital territory.',
-    image_url: '/src/assets/images/dest_abuja_rock_1793267886361.jpg',
+    image_url: '/images/dest_abuja_rock_1793267886361.jpg',
     is_featured: true,
     is_active: true,
     travel_notes: 'Multiple daily departures. Standard 20kg checked baggage.',
@@ -96,7 +96,7 @@ export const INITIAL_FLIGHT_OFFERS: FlightOffer[] = [
     display_label: 'Sample Fare (Indicative)',
     description:
       'Round-trip assistance for business executives and family visits with flexible morning and evening departures.',
-    image_url: '/src/assets/images/dest_lagos_skyline_1793267887899.jpg',
+    image_url: '/images/dest_lagos_skyline_1793267887899.jpg',
     is_featured: true,
     is_active: true,
     travel_notes: 'Includes return leg within 14 days of departure date.',
@@ -119,7 +119,7 @@ export const INITIAL_FLIGHT_OFFERS: FlightOffer[] = [
     display_label: 'Sample Fare (Indicative)',
     description:
       'Premier route connecting Nigeria to the UK for studies, holiday, business, and diaspora reunions.',
-    image_url: '/src/assets/images/dest_london_bridge_1793267887832.jpg',
+    image_url: '/images/dest_london_bridge_1793267887832.jpg',
     is_featured: true,
     is_active: true,
     travel_notes: 'Valid UK visa required. Options with 2 x 23kg checked bags.',
@@ -142,7 +142,7 @@ export const INITIAL_FLIGHT_OFFERS: FlightOffer[] = [
     display_label: 'Sample Fare (Indicative)',
     description:
       'Shopping, international conferences, and holiday getaways with trusted middle-eastern airline connections.',
-    image_url: '/src/assets/images/dest_dubai_skyline_1793267887900.jpg',
+    image_url: '/images/dest_dubai_skyline_1793267887900.jpg',
     is_featured: true,
     is_active: true,
     travel_notes: 'UAE tourist visa or entry permit assistance guidance available.',
@@ -165,7 +165,7 @@ export const INITIAL_FLIGHT_OFFERS: FlightOffer[] = [
     display_label: 'Sample Fare (Indicative)',
     description:
       'Reliable route connecting Lagos to Rivers State for corporate oil and gas business and family commitments.',
-    image_url: '/src/assets/images/hero_aircraft_clouds_1793267885903.jpg',
+    image_url: '/images/hero_aircraft_clouds_1793267885903.jpg',
     is_featured: false,
     is_active: true,
     travel_notes: 'Approx 1 hour flight time. Direct domestic service.',
@@ -188,7 +188,7 @@ export const INITIAL_FLIGHT_OFFERS: FlightOffer[] = [
     display_label: 'Sample Fare (Indicative)',
     description:
       'Convenient travel to Imo State and surrounding Eastern heartland commercial centers.',
-    image_url: '/src/assets/images/dest_abuja_rock_1793267886361.jpg',
+    image_url: '/images/dest_abuja_rock_1793267886361.jpg',
     is_featured: false,
     is_active: true,
     travel_notes: 'Fast domestic hop. Recommend early enquiry for weekend dates.',
@@ -211,7 +211,7 @@ export const INITIAL_FLIGHT_OFFERS: FlightOffer[] = [
     display_label: 'Sample Fare (Indicative)',
     description:
       'Rapid route between the federal capital and northern Nigeria’s primary trading hub.',
-    image_url: '/src/assets/images/dest_lagos_skyline_1793267887899.jpg',
+    image_url: '/images/dest_lagos_skyline_1793267887899.jpg',
     is_featured: false,
     is_active: true,
     travel_notes: '45-minute flight time. Safe and time-saving alternative to road travel.',
@@ -234,7 +234,7 @@ export const INITIAL_FLIGHT_OFFERS: FlightOffer[] = [
     display_label: 'Sample Fare (Indicative)',
     description:
       'Connecting southwest Nigeria with historical Sokoto for official visits and academic travel.',
-    image_url: '/src/assets/images/dest_abuja_rock_1793267886361.jpg',
+    image_url: '/images/dest_abuja_rock_1793267886361.jpg',
     is_featured: false,
     is_active: true,
     travel_notes: 'Scheduled flights operated by selected domestic carriers.',
@@ -257,7 +257,7 @@ export const INITIAL_FLIGHT_OFFERS: FlightOffer[] = [
     display_label: 'Sample Fare (Indicative)',
     description:
       'Direct service from Asaba International Airport serving Delta State and Onitsha commercial belt.',
-    image_url: '/src/assets/images/dest_abuja_rock_1793267886361.jpg',
+    image_url: '/images/dest_abuja_rock_1793267886361.jpg',
     is_featured: false,
     is_active: true,
     travel_notes: 'High demand on Mondays and Fridays.',
@@ -280,7 +280,7 @@ export const INITIAL_FLIGHT_OFFERS: FlightOffer[] = [
     display_label: 'Sample Fare (Indicative)',
     description:
       'Direct hop connecting Abuja to Akanu Ibiam International Airport in Enugu.',
-    image_url: '/src/assets/images/hero_aircraft_clouds_1793267885903.jpg',
+    image_url: '/images/hero_aircraft_clouds_1793267885903.jpg',
     is_featured: false,
     is_active: true,
     travel_notes: 'Quick 50 minute flight time.',
@@ -303,7 +303,7 @@ export const INITIAL_FLIGHT_OFFERS: FlightOffer[] = [
     display_label: 'Sample Fare (Indicative)',
     description:
       'Connecting West Africa to South Africa with nonstop and 1-stop options for trade and tourism.',
-    image_url: '/src/assets/images/dest_dubai_skyline_1793267887900.jpg',
+    image_url: '/images/dest_dubai_skyline_1793267887900.jpg',
     is_featured: false,
     is_active: true,
     travel_notes: 'Approx 6 hours direct flight duration.',
@@ -326,7 +326,7 @@ export const INITIAL_FLIGHT_OFFERS: FlightOffer[] = [
     display_label: 'Sample Fare (Indicative)',
     description:
       'Popular transatlantic route for international students and permanent residency travelers.',
-    image_url: '/src/assets/images/dest_london_bridge_1793267887832.jpg',
+    image_url: '/images/dest_london_bridge_1793267887832.jpg',
     is_featured: true,
     is_active: true,
     travel_notes: 'Transit visa required depending on stopover (e.g., Paris, Amsterdam, London).',
@@ -349,7 +349,7 @@ export const INITIAL_FLIGHT_OFFERS: FlightOffer[] = [
     display_label: 'Sample Fare (Indicative)',
     description:
       'Transatlantic connections to the US East Coast with major alliance partner carriers.',
-    image_url: '/src/assets/images/dest_london_bridge_1793267887832.jpg',
+    image_url: '/images/dest_london_bridge_1793267887832.jpg',
     is_featured: false,
     is_active: true,
     travel_notes: 'Valid US B1/B2 or student visa required before booking confirmation.',
@@ -372,7 +372,7 @@ export const INITIAL_FLIGHT_OFFERS: FlightOffer[] = [
     display_label: 'Sample Fare (Indicative)',
     description:
       'Direct and 1-stop options departing from Abuja Nnamdi Azikiwe International Airport to London.',
-    image_url: '/src/assets/images/dest_london_bridge_1793267887832.jpg',
+    image_url: '/images/dest_london_bridge_1793267887832.jpg',
     is_featured: false,
     is_active: true,
     travel_notes: 'British Airways direct departures and European stopover carriers.',

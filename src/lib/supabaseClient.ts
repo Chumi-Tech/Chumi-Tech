@@ -182,7 +182,7 @@ export const dataApi = {
       currency: offer.currency || 'NGN',
       display_label: offer.display_label || 'Sample Fare (Indicative)',
       description: offer.description || '',
-      image_url: offer.image_url || '/src/assets/images/hero_aircraft_clouds_1793267885903.jpg',
+      image_url: offer.image_url || '/images/hero_aircraft_clouds_1793267885903.jpg',
       is_featured: Boolean(offer.is_featured),
       is_active: offer.is_active !== undefined ? offer.is_active : true,
       travel_notes: offer.travel_notes || '',
