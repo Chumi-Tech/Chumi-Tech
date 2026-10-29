@@ -58,7 +58,7 @@ export const HomePage: React.FC<HomePageProps> = ({ offers, onNavigate, onSelect
         {/* Background Aircraft Imagery */}
         <div className="absolute inset-0 z-0">
           <img
-            src="/src/assets/images/hero_aircraft_clouds_1793267885903.jpg"
+            src="/images/hero_aircraft_clouds_1793267885903.jpg"
             alt="Aircraft cruising above clouds"
             referrerPolicy="no-referrer"
             className="w-full h-full object-cover object-center opacity-40 scale-105"
@@ -310,36 +310,54 @@ export const HomePage: React.FC<HomePageProps> = ({ offers, onNavigate, onSelect
             <div className="space-y-4">
               <div className="rounded-2xl overflow-hidden aspect-4/3 shadow-sm border border-slate-200">
                 <img
-                  src="/src/assets/images/dest_abuja_rock_1793267886361.jpg"
+                  src="/images/dest_abuja_rock_1793267886361.jpg"
                   alt="Aso Rock Abuja Nigeria"
                   referrerPolicy="no-referrer"
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="p-5 rounded-2xl bg-[#102A43] text-white">
-                <div className="text-xs text-sky-300 font-semibold uppercase tracking-wider mb-1">
-                  Domestic Network
+              <div className="relative p-5 rounded-2xl overflow-hidden shadow-sm text-white">
+                <img
+                  src="/images/dest_lagos_skyline_1793267887899.jpg"
+                  alt="Lagos skyline at dusk"
+                  referrerPolicy="no-referrer"
+                  className="absolute inset-0 w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#071A2B]/95 via-[#071A2B]/75 to-[#102A43]/30" />
+                <div className="relative">
+                  <div className="text-xs text-sky-300 font-semibold uppercase tracking-wider mb-1">
+                    Domestic Network
+                  </div>
+                  <div className="text-lg font-bold font-heading">All Major Nigerian Hubs</div>
+                  <p className="text-xs text-slate-200 mt-1">
+                    Regular assistance for Lagos, Abuja, Port Harcourt, Kano, and southeastern routes.
+                  </p>
                 </div>
-                <div className="text-lg font-bold font-heading">All Major Nigerian Hubs</div>
-                <p className="text-xs text-slate-300 mt-1">
-                  Regular assistance for Lagos, Abuja, Port Harcourt, Kano, and southeastern routes.
-                </p>
               </div>
             </div>
 
             <div className="space-y-4 pt-6">
-              <div className="p-5 rounded-2xl bg-white border border-slate-200 shadow-sm">
-                <div className="text-xs text-[#102A43] font-semibold uppercase tracking-wider mb-1">
-                  International Travel
+              <div className="relative p-5 rounded-2xl overflow-hidden shadow-sm text-white">
+                <img
+                  src="/images/dest_dubai_skyline_1793267887900.jpg"
+                  alt="Dubai skyline"
+                  referrerPolicy="no-referrer"
+                  className="absolute inset-0 w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-b from-[#071A2B]/95 via-[#071A2B]/75 to-[#102A43]/30" />
+                <div className="relative">
+                  <div className="text-xs text-sky-300 font-semibold uppercase tracking-wider mb-1">
+                    International Travel
+                  </div>
+                  <div className="text-lg font-bold font-heading">Global Connections</div>
+                  <p className="text-xs text-slate-200 mt-1">
+                    Reliable guidance on flights to the UK, Middle East, North America, and across Africa.
+                  </p>
                 </div>
-                <div className="text-lg font-bold text-slate-900 font-heading">Global Connections</div>
-                <p className="text-xs text-slate-500 mt-1">
-                  Reliable guidance on flights to the UK, Middle East, North America, and across Africa.
-                </p>
               </div>
               <div className="rounded-2xl overflow-hidden aspect-4/3 shadow-sm border border-slate-200">
                 <img
-                  src="/src/assets/images/dest_london_bridge_1793267887832.jpg"
+                  src="/images/dest_london_bridge_1793267887832.jpg"
                   alt="London Tower Bridge"
                   referrerPolicy="no-referrer"
                   className="w-full h-full object-cover"
